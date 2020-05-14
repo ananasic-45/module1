@@ -5,8 +5,11 @@ namespace module1.Proporty
         int _someInt;
         string _someStr;
 
+        //classic prop
+        public int SomeInt { get; set; } = default;
+
         // full prop
-        public int SomeInt
+        public int SomeInt1
         {
             get
             {
@@ -21,11 +24,11 @@ namespace module1.Proporty
 
 
         // #1 Shorthand
-        public int SomeInt1 { get; set; }
+        public int SomeInt2 { get; set; }
 
         // #2 Shorthand
 
-        public int SomeInt2
+        public int SomeInt3
         {
             get => _someInt;
             set => _someInt = value;
