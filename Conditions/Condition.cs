@@ -1,13 +1,13 @@
 namespace gagaga.Conditions
 {
-    public static class Conditions
+    static class Conditions
     {
         const bool TRUE_BOOL = true;
         const bool FALSE_BOOL = false;
 
         const int THREE = 3;
         const int FIVE = 5;
-        public static void Condition()
+        static void Condition()
         {
             {
                 if (THREE == 4)
@@ -50,7 +50,7 @@ namespace gagaga.Conditions
             }
         }
 
-        public static void ConditionDatReturnSmt()
+        static void ConditionDatReturnSmt()
         {
             {
 
