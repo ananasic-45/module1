@@ -9,8 +9,7 @@ namespace module1.OOP.Gear
 
         public override int Weight => _weight;
         public override string Name => _name;
-        public int Damage { get; }
-
+        public int Damage => _damage;
 
         public Weapon(string name, int weight, int damage)
         {
