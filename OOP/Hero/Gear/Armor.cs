@@ -12,7 +12,7 @@ namespace module1.OOP.Gear
 
         public Armor(string name, int weight)
         {
-            _name = name;
+            _name = name ?? "No name";
             _weight = weight;
         }
     }
