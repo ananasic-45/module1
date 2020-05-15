@@ -1,5 +1,10 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
+using module1.OOP;
+using module1.OOP.Gear;
+using module1.OOP.Gear.Interfaces;
+
 namespace HelloApp
 {
 
@@ -7,17 +12,10 @@ namespace HelloApp
     {
         static void Main(string[] args)
         {
-            var result = Task2(new string[] { "пича", "воле" });
-        }
+            HeroArcher hero = new HeroArcher("Tom", new Bag<IItem>() { new Weapon("Stick", 22, 30), new Armor("Pants", 33) });
 
-        static string Task2(string[] aaa)
-        {
-            string vad = string.Empty;
-
-            for (int i = 0; i < aaa.Length; i++)
-                vad += aaa[i];
-
-            return vad;
+            foreach (var item in hero.Bag)
+                System.Console.WriteLine(item.Name);
         }
     }
 }
